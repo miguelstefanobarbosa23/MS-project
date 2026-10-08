@@ -1,0 +1,103 @@
+
+.esquema__no {
+    animation: pulsar 2.6s ease-in-out infinite;
+}
+.esquema__no:nth-child(2) { animation-delay: 0.4s; }
+.esquema__no:nth-child(3) { animation-delay: 0.8s; }
+.esquema__no:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes pulsar {
+    0%, 100% { opacity: 0.55; r: 5; }
+    50%      { opacity: 1;    r: 7; }
+}
+
+.esquema__linha {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: desenhar-linha 1.8s ease forwards;
+}
+@keyframes desenhar-linha {
+    to { stroke-dashoffset: 0; }
+}
+
+.revelar {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.revelar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.revelar:nth-child(2) { transition-delay: 0.08s; }
+.revelar:nth-child(3) { transition-delay: 0.16s; }
+.revelar:nth-child(4) { transition-delay: 0.24s; }
+.revelar:nth-child(5) { transition-delay: 0.32s; }
+.revelar:nth-child(6) { transition-delay: 0.40s; }
+
+.card-projeto {
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.card-projeto:hover {
+    transform: translateY(-6px);
+    border-color: var(--cor-acento);
+}
+
+.habilidade { transition: border-color 0.25s ease; }
+.habilidade:hover { border-color: var(--cor-acento); }
+
+.habilidade__progresso.preencher {
+    width: var(--alvo, 0%);
+}
+
+@keyframes tremer {
+    10%, 90% { transform: translateX(-1px); }
+    20%, 80% { transform: translateX(2px); }
+    30%, 50%, 70% { transform: translateX(-4px); }
+    40%, 60% { transform: translateX(4px); }
+}
+.campo--erro input,
+.campo--erro textarea {
+    animation: tremer 0.5s ease;
+}
+
+@keyframes entrar-alerta {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.alerta { animation: entrar-alerta 0.35s ease; }
+
+@keyframes girar {
+    to { transform: rotate(360deg); }
+}
+.botao__spinner {
+    display: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #17212E;
+    border-radius: 50%;
+    animation: girar 0.6s linear infinite;
+}
+.botao.enviando .botao__spinner { display: inline-block; }
+.botao.enviando .botao__texto { opacity: 0.75; }
+
+
+.nav__lista a { transition: background-color 0.2s ease; }
+.nav__lista a:hover { background-color: rgba(79, 209, 197, 0.06); }
+
+
+.card-projeto.escondido {
+    opacity: 0;
+    transform: scale(0.94);
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.card-projeto {
+    transition: transform 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+}

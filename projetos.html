@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos — MS Projects</title>
+    <meta name="description" content="Vitrine de projetos web desenvolvidos por MS Projects.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animacoes.css">
+</head>
+<body>
+
+  
+    <header class="cabecalho">
+        <nav class="nav">
+            <a href="../index.html" class="nav__marca">MS<span>.</span>Projects</a>
+            <button class="nav__hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__lista">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="projetos.html" class="ativo">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="../php/admin.php">Área Restrita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao" style="border-top: none; padding-bottom: 0;">
+            <div class="container">
+                <h1 class="revelar">Vitrine de Projetos</h1>
+                <p class="secao__intro revelar">
+                    Projetos desenvolvidos ao longo do curso, do front-end ao back-end.
+                    Use os filtros para navegar por tecnologia.
+                </p>
+
+               
+                <div class="filtros revelar" role="group" aria-label="Filtrar projetos por tecnologia">
+                    <button class="filtro ativo" data-tecnologia="todos">Todos</button>
+                    <button class="filtro" data-tecnologia="html">HTML/CSS</button>
+                    <button class="filtro" data-tecnologia="js">JavaScript</button>
+                    <button class="filtro" data-tecnologia="php">PHP</button>
+                    <button class="filtro" data-tecnologia="mysql">MySQL</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" style="border-top: none; padding-top: var(--espaco-md);">
+            <div class="container">
+                <div class="grade-projetos">
+
+                    
+                    <article class="card-projeto revelar" data-tecnologias="html,css,php,mysql"
+                             data-descricao-completa="Sistema voltado para a rotina de uma biblioteca escolar: cada aluno é cadastrado uma única vez e passa a ter um histórico de empréstimos. O painel administrativo permite registrar a saída de um livro, dar baixa na devolução e gerar automaticamente um relatório dos empréstimos em atraso, cruzando a data prevista de devolução com a data atual. Toda a persistência é feita em MySQL através de PDO com Prepared Statements, evitando SQL Injection mesmo em campos de busca por nome de aluno ou título de livro."
+                             data-link="#">
+                        <div class="card-projeto__imagem">
+                            <img src="../img/biblioteca.jpg" alt="Biblioteca">
+                        </div>
+                        <div class="card-projeto__corpo">
+                            <h3>Sistema de Biblioteca Escolar</h3>
+                            <p>Controle de empréstimos de livros, cadastro de alunos e relatório de atrasos.</p>
+                            <div class="card-projeto__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span>
+                                <span class="tag">PHP</span><span class="tag">MySQL</span>
+                            </div>
+                            <div class="card-projeto__rodape">
+                                <button type="button" class="botao botao--secundario botao--pequeno abrir-detalhes">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto revelar" data-tecnologias="html,css,js,php"
+                             data-descricao-completa="E-commerce enxuto pensado para pequenos catálogos. O carrinho de compras roda inteiramente em JavaScript no navegador (adicionar, remover e atualizar quantidades sem recarregar a página), enquanto o PHP cuida do cadastro de produtos e do fechamento do pedido no servidor. O objetivo do projeto foi separar bem as responsabilidades: interface e interatividade no front-end, regras de negócio e persistência no back-end."
+                             data-link="#">
+                        <div class="card-projeto__imagem">
+                            <img src="../img/loja.jpg" alt="Loja">
+                        </div>
+                        <div class="card-projeto__corpo">
+                            <h3>Loja Virtual Simples</h3>
+                            <p>E-commerce de pequeno porte com carrinho de compras em JavaScript.</p>
+                            <div class="card-projeto__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span>
+                                <span class="tag">JS</span><span class="tag">PHP</span>
+                            </div>
+                            <div class="card-projeto__rodape">
+                                <button type="button" class="botao botao--secundario botao--pequeno abrir-detalhes">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto revelar" data-tecnologias="html,css,js"
+                             data-descricao-completa="Painel para organizar tarefas do dia a dia, com colunas por prioridade (alta, média, baixa) e filtros dinâmicos que escondem ou mostram tarefas sem recarregar a página. Os dados ficam salvos no localStorage do navegador, então a lista de tarefas continua lá mesmo se a página for fechada e reaberta. Todo o comportamento — criar, concluir, filtrar e reordenar tarefas — foi feito em JavaScript puro, sem frameworks."
+                             data-link="#">
+                        <div class="card-projeto__imagem">
+                             <img src="../img/tarefas.jpg" alt="Tarefas">
+
+                        </div>
+                        <div class="card-projeto__corpo">
+                            <h3>Dashboard de Tarefas</h3>
+                            <p>Organização de tarefas diárias por prioridade com filtros dinâmicos.</p>
+                            <div class="card-projeto__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                            </div>
+                            <div class="card-projeto__rodape">
+                                <button type="button" class="botao botao--secundario botao--pequeno abrir-detalhes">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto revelar" data-tecnologias="html,css,php,mysql"
+                             data-descricao-completa="Blog pessoal com painel de publicação de posts e uma área de comentários aberta aos visitantes. Cada post e cada comentário ficam gravados em tabelas separadas no MySQL, relacionadas pelo id do post. O grande cuidado do projeto foi escapar corretamente todo o conteúdo enviado pelos visitantes (comentários) antes de exibi-lo na tela, prevenindo ataques de XSS, além do uso de Prepared Statements em todas as consultas via PDO."
+                             data-link="#">
+                        <div class="card-projeto__imagem">
+                            <img src="../img/blog.webp" alt="Blog">
+
+                        </div>
+                        <div class="card-projeto__corpo">
+                            <h3>Blog Pessoal com Comentários</h3>
+                            <p>Publicação de posts e sistema de comentários armazenado em banco de dados.</p>
+                            <div class="card-projeto__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span>
+                                <span class="tag">PHP</span><span class="tag">MySQL</span>
+                            </div>
+                            <div class="card-projeto__rodape">
+                                <button type="button" class="botao botao--secundario botao--pequeno abrir-detalhes">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto revelar" data-tecnologias="html,css,js"
+                             data-descricao-completa="Simulador de orçamento mensal: o usuário informa renda e gastos por categoria e a página calcula automaticamente o saldo, além de desenhar um gráfico simples (barras em CSS/JS puro, sem bibliotecas externas) comparando as categorias de gasto. Todo o cálculo acontece em tempo real, a cada campo alterado, sem precisar clicar em nenhum botão de 'calcular'."
+                             data-link="#">
+                        <div class="card-projeto__imagem">
+                            <img src="../img/calculadora.jpg" alt="calculadora">
+
+                        </div>
+                        <div class="card-projeto__corpo">
+                            <h3>Calculadora de Orçamento</h3>
+                            <p>Simulador de gastos mensais com gráficos simples em JavaScript puro.</p>
+                            <div class="card-projeto__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                            </div>
+                            <div class="card-projeto__rodape">
+                                <button type="button" class="botao botao--secundario botao--pequeno abrir-detalhes">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto revelar" data-tecnologias="php,mysql,js"
+                             data-descricao-completa="Endpoint em PHP que recebe requisições e devolve respostas em JSON, permitindo criar enquetes, registrar votos e consultar a contagem em tempo real. Pensado para ser consumido por JavaScript via fetch(), simulando a comunicação entre front-end e back-end de uma aplicação real (uma pequena API REST). Os votos são contabilizados diretamente no MySQL, com validação para impedir votos duplicados na mesma enquete."
+                             data-link="#">
+                        <div class="card-projeto__imagem">
+                            <img src="../img/API.avif" alt="API">
+
+                        </div>
+                        <div class="card-projeto__corpo">
+                            <h3>API de Enquetes</h3>
+                            <p>Endpoint em PHP para criar enquetes e contabilizar votos em tempo real.</p>
+                            <div class="card-projeto__tags">
+                                <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JS</span>
+                            </div>
+                            <div class="card-projeto__rodape">
+                                <button type="button" class="botao botao--secundario botao--pequeno abrir-detalhes">Ver detalhes</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <div class="modal-projeto" id="modal-projeto" aria-hidden="true">
+        <div class="modal-projeto__fundo" data-fechar-modal></div>
+        <div class="modal-projeto__caixa" role="dialog" aria-modal="true" aria-labelledby="modal-projeto-titulo">
+            <button type="button" class="modal-projeto__fechar" data-fechar-modal aria-label="Fechar detalhes do projeto">&times;</button>
+
+            <div class="modal-projeto__imagem">
+                <img id="modal-projeto-imagem" src="" alt="">
+            </div>
+
+            <div class="modal-projeto__corpo">
+                <h2 id="modal-projeto-titulo"></h2>
+                <div class="modal-projeto__tags" id="modal-projeto-tags"></div>
+                <p id="modal-projeto-descricao"></p>
+
+                <div class="hero__acoes" style="margin-top: var(--espaco-sm);">
+                    <a id="modal-projeto-link" href="#" class="botao botao--primario" target="_blank" rel="noopener">Ver repositório</a>
+                    <span id="modal-projeto-sem-link" class="modal-projeto__aviso">Link do repositório em breve.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; <span id="ano-atual">2026</span> MS Projects — Projeto acadêmico de desenvolvimento web.</p>
+            <div class="rodape__links">
+                <a href="../index.html">Início</a>
+                <a href="contato.html">Contato</a>
+                <a href="../php/admin.php">Área Restrita</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
