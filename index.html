@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Projects — Portfólio de Desenvolvimento Web</title>
+    <meta name="description" content="Portfólio acadêmico de projetos web: HTML, CSS, JavaScript e PHP com PDO.">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="nav">
+            <a href="index.html" class="nav__marca">MS<span>.</span>Projects</a>
+
+            <button class="nav__hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav__lista">
+                <li><a href="index.html" class="ativo">Início</a></li>
+                <li><a href="pages/projetos.html">Projetos</a></li>
+                <li><a href="pages/contato.html">Contato</a></li>
+                <li><a href="php/admin.php">Área Restrita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <div class="container">
+                <div class="hero__texto">
+                    <span class="hero__marcador">&lt;portfólio devweb&gt;</span>
+                    <h1>Planejo e construo sistemas web do banco de dados à interface.</h1>
+                    <p>
+                        Sou estudante de desenvolvimento web e este é o MS Projects: um
+                        portfólio que reúne os projetos que venho construindo com HTML,
+                        CSS, JavaScript e PHP integrado a um banco de dados via PDO.
+                    </p>
+                    <div class="hero__acoes">
+                        <a href="pages/projetos.html" class="botao botao--primario">Ver projetos</a>
+                        <a href="pages/contato.html" class="botao botao--secundario">Falar comigo</a>
+                    </div>
+                </div>
+
+                <div class="hero__esquema" aria-hidden="true">
+                    <svg viewBox="0 0 380 260" xmlns="http://www.w3.org/2000/svg" width="100%">
+                        <line class="esquema__linha" x1="190" y1="130" x2="70" y2="50"></line>
+                        <line class="esquema__linha" x1="190" y1="130" x2="310" y2="50"></line>
+                        <line class="esquema__linha" x1="190" y1="130" x2="70" y2="210"></line>
+                        <line class="esquema__linha" x1="190" y1="130" x2="310" y2="210"></line>
+
+                        <circle class="esquema__no" cx="190" cy="130" r="7"></circle>
+                        <circle class="esquema__no" cx="70" cy="50" r="5"></circle>
+                        <circle class="esquema__no" cx="310" cy="50" r="5"></circle>
+                        <circle class="esquema__no" cx="70" cy="210" r="5"></circle>
+                        <circle class="esquema__no" cx="310" cy="210" r="5"></circle>
+
+                        <text class="esquema__texto" x="160" y="150">MS Projects</text>
+                        <text class="esquema__texto" x="30" y="40">HTML/CSS</text>
+                        <text class="esquema__texto" x="280" y="40">JavaScript</text>
+                        <text class="esquema__texto" x="30" y="230">PHP + PDO</text>
+                        <text class="esquema__texto" x="280" y="230">MySQL</text>
+                    </svg>
+                    <p class="hero__esquema-legenda">// pilha de tecnologias deste projeto</p>
+                </div>
+            </div>
+        </section>
+
+      
+        <section class="secao" id="sobre">
+            <div class="container">
+                <h2 class="revelar">Sobre este projeto</h2>
+                <p class="secao__intro revelar">
+                    O MS Projects nasceu como um trabalho de bimestre, mas foi construído
+                    como um sistema completo de verdade: páginas estáticas para o público
+                    (esta página e a vitrine de projetos) e um painel administrativo em
+                    PHP conectado a um banco de dados MySQL via PDO, com operações de
+                    criar, listar, editar e excluir registros.
+                </p>
+
+                <div class="grade-habilidades">
+                    <div class="habilidade revelar">
+                        <div class="habilidade__cabecalho"><span>HTML5</span><span>90%</span></div>
+                        <div class="habilidade__barra"><div class="habilidade__progresso" data-nivel="90"></div></div>
+                    </div>
+                    <div class="habilidade revelar">
+                        <div class="habilidade__cabecalho"><span>CSS3 / Responsivo</span><span>85%</span></div>
+                        <div class="habilidade__barra"><div class="habilidade__progresso" data-nivel="85"></div></div>
+                    </div>
+                    <div class="habilidade revelar">
+                        <div class="habilidade__cabecalho"><span>JavaScript</span><span>75%</span></div>
+                        <div class="habilidade__barra"><div class="habilidade__progresso" data-nivel="75"></div></div>
+                    </div>
+                    <div class="habilidade revelar">
+                        <div class="habilidade__cabecalho"><span>PHP + PDO</span><span>70%</span></div>
+                        <div class="habilidade__barra"><div class="habilidade__progresso" data-nivel="70"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <
+        <section class="secao" id="processo">
+            <div class="container">
+                <h2 class="revelar">Como eu construo cada projeto</h2>
+                <p class="secao__intro revelar">As quatro etapas que sigo do planejamento até a entrega:</p>
+
+                <div class="lista-processo">
+                    <div class="processo__item revelar">
+                        <span class="processo__numero">1</span>
+                        <div><h3>Planejamento</h3><p>Modelagem do banco de dados e wireframes das páginas.</p></div>
+                    </div>
+                    <div class="processo__item revelar">
+                        <span class="processo__numero">2</span>
+                        <div><h3>Estrutura</h3><p>HTML semântico e organização das páginas do site.</p></div>
+                    </div>
+                    <div class="processo__item revelar">
+                        <span class="processo__numero">3</span>
+                        <div><h3>Estilo e interação</h3><p>CSS responsivo e JavaScript para dar vida à interface.</p></div>
+                    </div>
+                    <div class="processo__item revelar">
+                        <span class="processo__numero">4</span>
+                        <div><h3>Back-end</h3><p>PHP com PDO e Prepared Statements para persistir os dados.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="secao" id="cta">
+            <div class="container">
+                <h2 class="revelar">Quer ver os projetos completos?</h2>
+                <p class="revelar">A vitrine reúne cada projeto com descrição, tecnologias usadas e link.</p>
+                <div class="hero__acoes revelar" style="margin-top: var(--espaco-sm);">
+                    <a href="pages/projetos.html" class="botao botao--primario">Explorar vitrine de projetos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; <span id="ano-atual">2026</span> MS Projects — Projeto acadêmico de desenvolvimento web.</p>
+            <div class="rodape__links">
+                <a href="pages/projetos.html">Projetos</a>
+                <a href="pages/contato.html">Contato</a>
+                <a href="php/admin.php">Área Restrita</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
